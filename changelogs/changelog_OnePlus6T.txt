@@ -1,54 +1,36 @@
 ===============
-27-03-2022
+03-04-2022
 ===============
-
-Based on android 12.1 + March patch
+Source Changelog:
+• Allow users to use charging vibration without sounds
+• Allow users to disable ripple effect on unlock
+• Allow users to disable QS footer warnings
+• Bring back cutout force full screen option
+• Bring back back gestures swipe deadzone
+• Bring back roaming indicator to statusbar tuner
 • Bring back battery temp on battery page
-•Bring back battery  charging light
-• Enable call recording on google dialer (Gapps build only) 
-•Introduce pulse music visualizer
+• Enable call recording on google dialer (Gapps build only)
+• Introduce pulse music visualizer
 • Introduce face unlock & app lock
 • Introduce per app volume
 • Introduce auto hide clock
 • Move battery light settings into dashboard battery section 
 • Make ringtone audio focus customizable
 • Remove divider from Battery Manager
-•Under Gesture section added/improved
--dead zone
--pill length
--full screen gesture
--haptick feedback while using back gesture
-•added new short cuts of asistant menu
-•under poser button /lock screen lots of option added
--torch short-cut menu
--playback control 
-3 finger swipe screenshot
-•music pulse added/improved
--Navbar pulse
--ambient pulse Added
--lockscreen pulse
--Double tap gesture
-•udner battery section 
-new featuers added
-Under Display section
--display colour Kcal improved
--improved monet
-much more stuff added  explore yourself :D
+• Fixed an issue when Systemui crash on long click QS tile
+• Fixed some NPE
+• Gmscompat upstream
+
+===============
+03-04-2022
+===============
 
 Device Changelog:
-
--HAVOC DEVICE SETTINGS COMING SOONER
-bluetooth:Switch to latest caf  QTI bt 
-- under the hood lots of optimization
--Enable OTG-again back but we already fixed 3 weeks ago
--updated Primus kernel with caf changes
--updated primus kernel from v4.9.230 to v4.9.231
--havoc device settings will come with a12.1
--improved disply color kcal mode
--audio: Remove oem changes to "primary input"
--audio: Remove TelePhony Rx from primary input
--Drop lineage livedisplay-we already have kcal
--new los patches added
--Switch speaker-dmic-endfire ACDB 
--Use QUAT_MI2S_TX for echo-reference
-all changes included from 26 march build
+• fajita: Remove resource overlays for system bar heights
+• Fixed some logspams
+•  Use 6GB dalvik-heap config
+• rootdir: Import post_boot changes from OOS 11
+• Build remaining extn/post_proc/visualizer audio modules
+• primus kernel side fixes  more optimized
+• wireguard updated
+•under the hood lots of fixes and optimization done for better performance 
