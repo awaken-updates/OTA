@@ -1,6 +1,6 @@
 
 ===============
-09-04-2022
+16-04-2022
 ===============
 
 Source Changelog:
@@ -18,10 +18,25 @@ Fixed start padding for battery usage graph
 Misc fixes and improvements
 
 ===============
-09-04-2022
+16-04-2022
 ===============
 
 Device Changelog:
+
+Quick tap Added
+source side  fixes
+source side ui improvments & fixes
+left volume refined ui
+Bring Back Quick tap
+Bring-Back Havoc OnePlusSettings
+Mute media volume on silent mode toggle
+DC Dimming toggle + QS tile
+HBM & Auto HBM + QS tile
+Ambient display + QS tile (merged into OnePlusSettings)
+FPS Info + QS tile
+Touchscreen gestures preference
+Vibrator strength preference
+
 
 sdm845-common : fixed IMS issue for airtel users ringing not hearable
 fajita: Remove resource overlays for system bar heights
@@ -34,28 +49,8 @@ libqti-perfd.so depends on these
 Use 6GB dalvik-heap config
 We are currently using 2GB dalvik-heap config.Kill deprecated TARGET_USES_MKE2FS
 
-===============
-Primus-kernel changes
-===============
 
-primus kernel  compiled with latest google clang version 
-linux upstream version from v4.9.231 to v4.9.309 (to uptodate version)
-added by default  google clang version r445002 for better performance & smoothnes
-updated wireguard
-dts: msm: Import some changes from oneplus/SDM845_R_11.0
-attributes implementation to enable/disable usb data
-drivers: drm: Import OnePlus DC dimming code
-
-Latest Caf tags added for better optimization and performance
-LA.UM.8.3.c25-03100-sdm845.0
-LA.UM.8.3.c25-04300-sdm845.0
-LA.UM.8.3.c25-04300-sdm845.0
 ===============
 hardware/oneplus
 ===============
-
-hidl: fingerprint: General improvements
-interfaces: Add vendor.oneplus.hardware.drmkey@1.0
-OnePlusDiracGef: Add an exported flag in manifest
-vibrator: Update effects from Q vibrator HAL
-vibrator: Improve some effects
+sdm845-common: Merge hardware/oneplus components
