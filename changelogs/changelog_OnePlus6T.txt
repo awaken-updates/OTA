@@ -1,6 +1,5 @@
-
 ===============
-16-04-2022
+17-04-2022
 ===============
 
 Source Changelog:
@@ -18,7 +17,7 @@ Fixed start padding for battery usage graph
 Misc fixes and improvements
 
 ===============
-16-04-2022
+17-04-2022
 ===============
 
 Device Changelog:
@@ -38,7 +37,10 @@ Touchscreen gestures preference
 Vibrator strength preference
 
 
-sdm845-common : fixed IMS issue for airtel users ringing not hearable
+===============
+sdm845-common 
+===============
+fixed IMS issue for airtel users ringing not hearable
 fajita: Remove resource overlays for system bar heights
 added main primus havoc kernel
 build with LLVM=1 KERNEL_ADDITIONAL_FLAGS
@@ -48,7 +50,14 @@ Add PASR HIDL interface libs
 libqti-perfd.so depends on these
 Use 6GB dalvik-heap config
 We are currently using 2GB dalvik-heap config.Kill deprecated TARGET_USES_MKE2FS
+fixed sepolicy denials
+under the hood  more fixed & improvments
 
+===============
+Fajita
+===============
+
+fix fingerprint  hal issue
 
 ===============
 hardware/oneplus
