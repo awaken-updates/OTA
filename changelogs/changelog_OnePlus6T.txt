@@ -1,3 +1,41 @@
+
+===============
+25-04-2022
+===============
+
+
+vendor_awaken
+Disable remote keyguard animation until it's fixed
+Fixes slow post biometric auth screen wakeup
+
+ Drop unused media flags for UM 5.4 family
+These variables are not used in media HAL anymore since sm8350
+
+overlay: show all icons in collapsed statusbar
+There is no need to block them here as they can be blocked in settings
+
+
+frameworks_base
+Revert "base: SystemUI: Unblock alarm and vibrate status bar icons"
+* We are doing it from vendor/awaken
+
+DisplayPowerController: Fix incall proximity not turning off display
+
+SystemUI: restart timeout causes black screen
+This change mainly delays the "scheduleServiceRestartLocked->
+mAm.Handler.postAtTime(r.restart,r.nextRestartTime);" startup
+service and puts it to "attachApplication Locked->
+mAm.mHandler.post(sr.restarter);".
+
+
+build_soong
+
+soong: dumpvar additional GMS variables
+* To match 19.1.
+
+
+
+
 ===============
 17-04-2022
 ===============
@@ -16,9 +54,11 @@ Fixed an issue where unlock sound played repeatedly
 Fixed start padding for battery usage graph
 Misc fixes and improvements
 
+
 ===============
-17-04-2022
+25-04-2022
 ===============
+
 
 Device Changelog:
 
@@ -40,6 +80,7 @@ Vibrator strength preference
 ===============
 sdm845-common 
 ===============
+Re-added more gapps apps as pre-build
 fixed IMS issue for airtel users ringing not hearable
 fajita: Remove resource overlays for system bar heights
 added main primus havoc kernel
@@ -52,6 +93,9 @@ Use 6GB dalvik-heap config
 We are currently using 2GB dalvik-heap config.Kill deprecated TARGET_USES_MKE2FS
 fixed sepolicy denials
 under the hood  more fixed & improvments
+google dialer call recording fixed
+latest los changes included
+havoc-device-settings - underhood fixup
 
 ===============
 Fajita
