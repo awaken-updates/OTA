@@ -1,54 +1,72 @@
 
+
 ===============
-16-04-2022
+06-05-2022
 ===============
 
-Source Changelog:
-Add tunables for navbar layout
-Add toggle for quick settings to pull down with one finger
-Allow users to hide app from launcher
- Bring back daily data usage in QS footer
- Bring back Game Dashboard & Quick Tap
- Introduced back gesture height settings
- Introduced expanded volume panel
- Implement burn-in protection for status/navbar
- Update themed icons from Lawnicons
-Fixed an issue where unlock sound played repeatedly
-Fixed start padding for battery usage graph
+
+Source Changelog for : Awaken OS v2.7
+// New features
+Add call strength, vibrate & mute icon to statusbar tuner
+Add API for runtime taskbar config on phones
+Allow users to lock and hide system apps
+Allow users to toggle camera/mic privacy indicator
+Allow users to configure 0, 90, 180 and 270 degree rotation
+Do not show camera indicator for Face Unlock service
+Fetch bluetooth battery level from any device
+Introduced volume key cursor control
+Introduced CM Screen Lockscreen Pattern Security settings
+Update caffeine qs tile icon
+Update themed icons
+
+// Fixed issues
+
+Fixed issue with alarm icon
+Fixed pixel launcher dark search bar in light theme
+Fixed rounded corners for icon shapes
+Fixed volume panel arrow in Viktor and Sam icon packs
 Misc fixes and improvements
 
 ===============
-16-04-2022
+06-05-2022
 ===============
 
 Device Changelog:
 
 Quick tap Added
-source side  fixes
-source side ui improvments & fixes
-left volume refined ui
+call recording fixed
+sdm845-common: Add PASR HIDL interface libs
+sdm845-common: Switch to IMS from ZenFone 8 for volte , calling 
+sdm845-common: Set SSR restart_level in init.qcom.rc
+sdm845-common: Don't apply persist.vendor.usb.config
+Otherwise adb turns on after reboot every time.
+sdm845-common: Pick up USB configurations from QCOM
+Sdm845-common: more optimization done under havoc oneplus device Settings
 Bring Back Quick tap
-Bring-Back Havoc OnePlusSettings
-Mute media volume on silent mode toggle
-DC Dimming toggle + QS tile
-HBM & Auto HBM + QS tile
-Ambient display + QS tile (merged into OnePlusSettings)
-FPS Info + QS tile
-Touchscreen gestures preference
-Vibrator strength preference
 
 
-sdm845-common : fixed IMS issue for airtel users ringing not hearable
-fajita: Remove resource overlays for system bar heights
-added main primus havoc kernel
-build with LLVM=1 KERNEL_ADDITIONAL_FLAGS
-Re-added f2fs support
-Allow more background apps
-Add PASR HIDL interface libs
-libqti-perfd.so depends on these
-Use 6GB dalvik-heap config
-We are currently using 2GB dalvik-heap config.Kill deprecated TARGET_USES_MKE2FS
+===============
+06-05-2022
+===============
 
+===============
+primus kernel-rebased
+=============== 
+Synchronize codes for Oneplus 6/6T OxygenOS 11.1.1.1
+Adding mutex_lock instead of mutex_trylock
+enable load bytes helper for filter/reuseport progs
+Add sysfs nodes for EFPS
+High power consumption in Real AOD 17819
+merged Tag  Android 12.0 caf / drivers/ gpu into primus kernel
+LA.UM.10.3.r1-01700-sdm845.0 
+LA.UM.10.3.r1-01700-sdm845.0
+LA.UM.8.3.c25-05000-sdm845.0
+LA.UM.8.3.c25-04300-sdm845.0
+
+drivers: drm: Import OnePlus DC dimming code
+ARM: dts: msm: Import some changes from oneplus/SDM845_R_11.0
+RM: dts: msm: Add second trip to thermal zones those have two clients
+usb: new attributes implementation to enable/disable usb data
 
 ===============
 hardware/oneplus

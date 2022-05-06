@@ -1,14 +1,14 @@
 {
   "response": [
     {
-      "datetime": 1650890870,
-      "size": 1347449372,
-      "filehash": "f3040e52915c44a7f8e9a607323d473c",
-      "filename": "Awaken-2.6-Eclipse-enchilada-UNOFFICIAL-Gapps-1248-20220425.zip",
-      "id": "3af14119fc22a44f9684e904882ba84dd673d3a738a39c162edfef66aee1671b",
+      "datetime": 1651837950,
+      "size": 1341178105,
+      "filehash": "9ae2e389c40b517eedeec99cbca15a90",
+      "filename": "Awaken-2.7-Glacier-enchilada-UNOFFICIAL-Gapps-1152-20220506.zip",
+      "id": "86de9f39620b0745334a8906f67a342b1f2d2de3fde112a96d3481875620c7d0",
       "romtype": "UNOFFICIAL",
-      "version": "2.6",
-      "url": "https://sourceforge.net/projects/awakenos-op6-t/files/enchilada/Awaken-2.6-Eclipse-enchilada-UNOFFICIAL-Gapps-1248-20220425.zip/download"
+      "version": "2.7",
+      "url": "https://sourceforge.net/projects/awakenos-op6-t/files/enchilada/Awaken-2.7-Glacier-enchilada-UNOFFICIAL-Gapps-1152-20220506.zip/download"
     }
   ]
 }
