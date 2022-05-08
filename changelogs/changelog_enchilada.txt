@@ -1,7 +1,6 @@
 
-
 ===============
-06-05-2022
+08-05-2022
 ===============
 
 
@@ -28,12 +27,24 @@ Fixed volume panel arrow in Viktor and Sam icon packs
 Misc fixes and improvements
 
 ===============
-06-05-2022
+08-05-2022
 ===============
 
-Device Changelog:
 
-Quick tap Added
+===============
+Device Changelog:
+===============
+
+sdm845-common: Decommonize audio policy volumes
+sdm845-common: Set SSR restart_level in init.qcom.rc
+sdm845-common: Don't apply persist.vendor.usb.config
+sdm845-common: Pick up USB configurations from QCOM
+sdm845-common :sepolicy: fastchg_status
+sdm845-common: Switch to patched ims.apk from awakenos v2.5
+
+===============
+06-05-2022
+===============
 call recording fixed
 sdm845-common: Add PASR HIDL interface libs
 sdm845-common: Switch to IMS from ZenFone 8 for volte , calling 
@@ -44,14 +55,38 @@ sdm845-common: Pick up USB configurations from QCOM
 Sdm845-common: more optimization done under havoc oneplus device Settings
 Bring Back Quick tap
 
+===============
+08-05-2022
+===============
+
+
+===============
+Enchilada
+===============
+
+
+Enchilada: Set USB product string to 'OnePlus 6'
+Enchilada: Import audio_policy_volumes.xml, default_volume_tables.xml
+Enchilada: Apply OOS 11 audio volumes changes
+
+
+===============
+08-05-2022
+===============
+
+===============
+primus kernel-rebased
+===============
+
+Kernel:updated to v4.9.230 
+Added Wireguard support
+wireguard: Update wireguard to v1.0.20211208
+
 
 ===============
 06-05-2022
 ===============
 
-===============
-primus kernel-rebased
-=============== 
 Synchronize codes for Oneplus 6/6T OxygenOS 11.1.1.1
 Adding mutex_lock instead of mutex_trylock
 enable load bytes helper for filter/reuseport progs
@@ -60,9 +95,6 @@ High power consumption in Real AOD 17819
 merged Tag  Android 12.0 caf / drivers/ gpu into primus kernel
 LA.UM.10.3.r1-01700-sdm845.0 
 LA.UM.10.3.r1-01700-sdm845.0
-LA.UM.8.3.c25-05000-sdm845.0
-LA.UM.8.3.c25-04300-sdm845.0
-
 drivers: drm: Import OnePlus DC dimming code
 ARM: dts: msm: Import some changes from oneplus/SDM845_R_11.0
 RM: dts: msm: Add second trip to thermal zones those have two clients
