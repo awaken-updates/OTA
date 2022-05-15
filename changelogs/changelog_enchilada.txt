@@ -1,10 +1,48 @@
 
 ===============
+15-05-2022
+===============
+Device Changelog:
+===============
+sdm845-common: Rebase whole dt on  15/5/2022
+sdm845-common: lots of underhood cleanup/ optimization done
+sdm845-common:Misc fixes and improvements
+sdm845-common: Merge hardware/oneplus components
+Including
+interfaces: Import Camera HAL
+interfaces: Move CameraMDMHIDL to hardware
+sdm845-common :sepolicy: fastchg fixup
+sdm845-common: more optimized havoc OnePlus Settings
+Pick up USB configurations from QCOM'
+vibrator: Add support for intensity control 
+vibrator: Update effects from Q vibrator HAL
+fixed few more Sepolicy denials
+imported latest QTI bt Stack
+call recording fixed
+
+===============
+15-05-2022
+===============
+Enchilada
+===============
+enchilada: Set USB product string to 'OnePlus 6'
+fixup! enchilada: Remove resource overlays for system bar heights
+Reverted enchilada: Apply OOS 11 audio volumes changes 8may BACK TO old one
+Reverted enchilada: Import audio_policy_volumes 8may BACK TO old ones
+
+===============
+15-05-2022
+===============
+hardware/oneplus
+===============
+sdm845-common: updated merged  hardware/oneplus components in device tree
+
+
+===============
 08-05-2022
 ===============
-
-
-Source Changelog for : Awaken OS v2.7
+Rom Source Changelog for : Awaken OS v2.7
+================
 // New features
 Add call strength, vibrate & mute icon to statusbar tuner
 Add API for runtime taskbar config on phones
@@ -25,82 +63,3 @@ Fixed pixel launcher dark search bar in light theme
 Fixed rounded corners for icon shapes
 Fixed volume panel arrow in Viktor and Sam icon packs
 Misc fixes and improvements
-
-===============
-08-05-2022
-===============
-
-
-===============
-Device Changelog:
-===============
-
-sdm845-common: Decommonize audio policy volumes
-sdm845-common: Set SSR restart_level in init.qcom.rc
-sdm845-common: Don't apply persist.vendor.usb.config
-sdm845-common: Pick up USB configurations from QCOM
-sdm845-common :sepolicy: fastchg_status
-sdm845-common: Switch to patched ims.apk from awakenos v2.5
-
-===============
-06-05-2022
-===============
-call recording fixed
-sdm845-common: Add PASR HIDL interface libs
-sdm845-common: Switch to IMS from ZenFone 8 for volte , calling 
-sdm845-common: Set SSR restart_level in init.qcom.rc
-sdm845-common: Don't apply persist.vendor.usb.config
-Otherwise adb turns on after reboot every time.
-sdm845-common: Pick up USB configurations from QCOM
-Sdm845-common: more optimization done under havoc oneplus device Settings
-Bring Back Quick tap
-
-===============
-08-05-2022
-===============
-
-
-===============
-Enchilada
-===============
-
-
-Enchilada: Set USB product string to 'OnePlus 6'
-Enchilada: Import audio_policy_volumes.xml, default_volume_tables.xml
-Enchilada: Apply OOS 11 audio volumes changes
-
-
-===============
-08-05-2022
-===============
-
-===============
-primus kernel-rebased
-===============
-
-Kernel:updated to v4.9.230 
-Added Wireguard support
-wireguard: Update wireguard to v1.0.20211208
-
-
-===============
-06-05-2022
-===============
-
-Synchronize codes for Oneplus 6/6T OxygenOS 11.1.1.1
-Adding mutex_lock instead of mutex_trylock
-enable load bytes helper for filter/reuseport progs
-Add sysfs nodes for EFPS
-High power consumption in Real AOD 17819
-merged Tag  Android 12.0 caf / drivers/ gpu into primus kernel
-LA.UM.10.3.r1-01700-sdm845.0 
-LA.UM.10.3.r1-01700-sdm845.0
-drivers: drm: Import OnePlus DC dimming code
-ARM: dts: msm: Import some changes from oneplus/SDM845_R_11.0
-RM: dts: msm: Add second trip to thermal zones those have two clients
-usb: new attributes implementation to enable/disable usb data
-
-===============
-hardware/oneplus
-===============
-sdm845-common: Merge hardware/oneplus components
