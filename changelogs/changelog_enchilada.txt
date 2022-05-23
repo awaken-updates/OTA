@@ -1,42 +1,62 @@
 
 ===============
-15-05-2022
+23-05-2022
+===============
+
+ Awaken OS v2.7
+================
+// New features
+Introduce high touch polling rate feature control
+Settings: fix the incorrect key value for high polling rate
+Misc fixes and improvements
+
+===============
+23-05-2022
 ===============
 Device Changelog:
 ===============
-sdm845-common: Rebase whole dt on  15/5/2022
-sdm845-common: lots of underhood cleanup/ optimization done
-sdm845-common:Misc fixes and improvements
-sdm845-common: Merge hardware/oneplus components
-Including
-interfaces: Import Camera HAL
-interfaces: Move CameraMDMHIDL to hardware
+sdm845-common: Add missing ANT+ HAL blob
+sdm845-common: Set vendor prop for PRJ and RF version 
+sdm845-common: Decommonize audio policy volumes
+sdm845-common: Add missing USB properties
+sdm845-common: Added initial oos camera support
+full support wil be added in upcoming updates 
+new hickups you will face 
+sdm845-common: prop Increase more background apps handling  (foked from op7)
+sdm845-common: Misc fixes and improvements
+sdm845-common: complete Drop lineage livedisplay
+sdm845-common: Add more props for blur
 sdm845-common :sepolicy: fastchg fixup
-sdm845-common: more optimized havoc OnePlus Settings
-Pick up USB configurations from QCOM'
-vibrator: Add support for intensity control 
-vibrator: Update effects from Q vibrator HAL
-fixed few more Sepolicy denials
-imported latest QTI bt Stack
-call recording fixed
+sdm845-common: Enable freeform windows
+sdm845-common: overlay: enable burn in protection for status bar
+sdm845-common:overlay: Show color modes from config_availableColorModes
+sdm845-common: set default  ColorModes from config_availableColorModes
+sdm845-common: overlay: Define device support dash charging 
+sdm845-common: : Define OnePlus sensor for pocket detection
+sdm845-common: Silence clang compile warnings during kernel compile
+sdm845-common : address more sepolicy  denials
+sdm845_common : Added Tri-state UI support
+sdm845-common:Misc fixes and improvements
 
 ===============
-15-05-2022
+23-05-2022
 ===============
 Enchilada
 ===============
 enchilada: Set USB product string to 'OnePlus 6'
 fixup! enchilada: Remove resource overlays for system bar heights
-Reverted enchilada: Apply OOS 11 audio volumes changes 8may BACK TO old one
-Reverted enchilada: Import audio_policy_volumes 8may BACK TO old ones
+Added enchilada: Apply OOS 11 audio volumes changes
+Added enchilada: Import audio_policy_volumes
+Revert "enchilada: Make Android.mk search recursive"
 
 ===============
-15-05-2022
+23-05-2022
 ===============
-hardware/oneplus
+hardware_oneplus:
 ===============
-sdm845-common: updated merged  hardware/oneplus components in device tree
-
+interfaces: Add vendor.oneplus.hardware.CameraMDMHIDL@1.0
+vibrator Add support for intensity control 
+vibrator: Update effects from Q vibrator HAL
 
 ===============
 08-05-2022
