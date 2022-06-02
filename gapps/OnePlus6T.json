@@ -1,14 +1,14 @@
 {
   "response": [
     {
-      "datetime": 1653388885,
-      "size": 1346859161 ,
-      "filehash": "6d237fd573c4ab085bdba3b2874295eb",
-      "filename": "lineage-19.1-FORK-GAPPS-20220524-1041-fajita.zip",
-      "id": "b5cb4d82f71ff371581538ae71f129446c8042d8a2378af07f9a2deaca866369",
+      "datetime": 1654175104,
+      "size": 1347899783,
+      "filehash": "ce705caaec4b8621c9baa365bb915218",
+      "filename": "Awaken-2.7-Glacier-fajita-UNOFFICIAL-Gapps-1305-20220602.zip",
+      "id": "baa262d9fa7c94b058896c510246ada38cd1b98f4b64c6809291100a1987d7af",
       "romtype": "UNOFFICIAL",
-      "version": "19.1",
-      "url": "https://ota.havocop6.workers.dev/0:/lineage-19.1-FORK-GAPPS-20220524-1041-fajita.zip"
+      "version": "2.7",
+      "url": "https://sourceforge.net/projects/aosipbackup/files/Awaken-2.7-Glacier-fajita-UNOFFICIAL-Gapps-1305-20220602.zip/download"
     }
   ]
 }
