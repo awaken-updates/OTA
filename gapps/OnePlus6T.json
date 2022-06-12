@@ -1,14 +1,14 @@
 {
   "response": [
     {
-      "datetime": 1653311897,
-      "size": 1354423392,
-      "filehash": "1bd14e9249cfc3bc04c017ba32808272",
-      "filename": "Awaken-2.7-Glacier-fajita-UNOFFICIAL-Gapps-1318-20220523.zip",
-      "id": "6bcafb900fa05d2dc16bc390fa6cbf01529b1f986c03eb25e45c7063cf6ba437",
+      "datetime": 1655046257,
+      "size": 1358307853,
+      "filehash": "e681bce8db3b47b1f46ddd37a6f22e26",
+      "filename": "Awaken-2.8-Plasma-fajita-UNOFFICIAL-Gapps-1504-20220612.zip",
+      "id": "4f72a8d757864ce8cee9c4d5fd00e000486ffd51932cb0e0df73eaa14345844c",
       "romtype": "UNOFFICIAL",
-      "version": "2.7",
-      "url": "https://sourceforge.net/projects/awakenos-op6-t/files/fajita/Awaken-2.7-Glacier-fajita-UNOFFICIAL-Gapps-1318-20220523.zip/download"
+      "version": "2.8",
+      "url": "https://sourceforge.net/projects/awakenos-op6-t/files/fajita/Awaken-2.8-Plasma-fajita-UNOFFICIAL-Gapps-1504-20220612.zip/download"
     }
   ]
 }
