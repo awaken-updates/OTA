@@ -1,8 +1,17 @@
+
 ===============
-12-06-2022
+23-06-2022
+===============
+Source New-changes will be up with v2.9
+lots of source underhood fixes & optimization done
+
+===============
+23-06-2022
 ===============
 Changelog for Awaken OS v2.8
 // New features
+
+\
 
 • Add left padding for keyguard slices
 • Add more themed icons for both gapps/vanilla builds
@@ -25,104 +34,60 @@ Changelog for Awaken OS v2.8
 • Fixed some NPE
 
 ===============
-12-06-2022
+23-06-2022
 ===============
 ########################################
 Fajita Changes:
 ########################################
-
-
-fajita: Switch to user build
-fajita: Blob out ODM feature list
-fajita: Import odm_feature_list
-Fajita: overlay: Import NoCutoutOverlay 
-fajita: Import audio_policy_volumes.xml, default_volume_tables.xml 
-fajita: Apply OOS 11 New audio volumes changes
-fajita: Fixed status bar glitch for apps that access internal resource dimen
+fajita: Fixed status bar glitch for apps that access internal res.
 Bring back old usage of status_bar_height, status_bar_height_portrait,
 and status_bar_height_landscape by set the size containing cutout size
 
 
 ===============
-12-06-2022
+23-06-2022
 ===============
-
 ########################################
 enchilada Changes:
 ########################################
-
-
-enchilada : Switch to user build
-enchilada: Import odm_feature_list 
-enchilada: Blob out ODM feature list 
-enchilada: Apply OOS New 11 audio volumes changes
-enchilada: Import audio_policy_volumes.xml, default_volume_tables.xml
-enchilada: Remove resource overlays for system bar heights
-enchilada: Adapt NoCutOutOverlay to S 
-enchilada: Fixed status bar glitch for apps that access internal resource dimen
+enchilada: Fixed status bar glitch for apps that access internal res. dimen
 Bring back old usage of status_bar_height, status_bar_height_portrait,
 and status_bar_height_landscape by set the size containing cutout size
 
 
 ===============
-12-06-2022
+23-06-2022
 ===============
-
 ########################################
 sdm845-common Changes:
 ########################################
-sdm845-common: fixed  few denials & sepolicy for switching to USER build
-sdm845-common: Switch to IMS from ZenFone 8
-sdm845-common: Automatically add apk/jar/vintf fragments to PRODUCT package
-vendor/app/CneApp/CneApp.apk
-vendor/vendor.qti.gnss@4.0-service.xml
-product/HotwordEnrollmentOKGoogle.apk
-product/priv-app/HotwordEnrollmentXGoogleWCD9340_SDM845.apk
-system_ext/app//NxpNfcNci.ap
-/QtiTelephonyService.apk
-System_ext/priv-app/WfdService.apk
-sdm845-common: sepolicy: bring-back sake ims.apk 
-sdm845-common: BoardConfig: Update TARGET_ARCH_VARIANT 
-sdm845-common: anti flicker & SunlightEnhancement now we have working hbm in op settings
-sdm845-common: Enable freeform windows
-sdm845-common: Add more props for blur
-sdm845-common: Enable smart charging support
-sdm845-common :overlays remove smart charging BatteryLevel
-sdm845-common: Implement OnePlus Settings
-sdm845-common: sepolicy: fixup some sepolicy denials
-sdm845-common :sepolicy: fastchg_status fixup
-sdm845-common: pocketmode: Bump SDK version
-sdm845-common: pocketmode: Make DirectBoot aware
-sdm845-common: pocketmode: Start in the user context
-sdm845-common: pocketmode: Minor cleanups
-sdm845-common: Set vendor.post_boot.parsed=1 before starting perfd
-sdm845-common: Add missing USB properties
-sdm845-common: Don't apply persist.vendor.usb.config
-sdm845-common: Use 6GB dalvik-heap config
-
+sdm845-common: Add isDefaultPaymentRegistered to NxpNfcNci 
+sdm845-common: Add {is,set}TagUpToDate to NxpNfcNci
+sdm845-common: sepolicy: Allow vendor_qtelephony to set radio_prop
+sdm845-common: Sort blobs list /w sort-blobs-list.py 
+sdm845-common: Add more props for blur 
+sdm845-common: overlay: Don't pin camera app in memory 
+sdm845-common: overlay: configure SQLite to operate in MEMORY mode
+sdm845-common: overlay: Don't pin launcher app in memory
 
 ===============
-12-06-2022
+23-06-2022
 ===============
 ########################################
 vendor/oneplus Changes:
 ########################################
 sdm845-common: Add isDefaultPaymentRegistered to NxpNfcNci
-enchilada/fajita: Import odm_feature_list
-sdm845-common: Add PASR HIDL interface libs 
-sdm845-common: Switch to IMS from ZenFone 8 (sake)
-enchilada/fajita: Add acdb Blobs
-sdm845-common: Add missing ANT+ HAL blob 
-sdm845-common:Add and update Missing camera blobs from OnePlus6Oxygen_22.J.62_OTA_0620
-
+sdm845-common: Add {is,set}TagUpToDate to NxpNfcNci 
 
 ===============
-12-06-2022
+23-06-2022
 ===============
 ########################################
 Hardware/oneplus Changes:
 ########################################
-
+KeyHandler: Restore state on boot 
+hardware: oneplus-fwk: Add more OnePlus bits 
+aidl: vibrator: Update vibration effects
 hidl: fingerprint: call onFingerUp() on error fingerprint unlock
 hidl: fingerprint: Spoof verifiedboostate via property_get() hook  
 
