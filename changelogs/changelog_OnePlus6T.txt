@@ -1,109 +1,42 @@
 
 ===============
-23-06-2022
+11-07-2022
 ===============
-Source New-changes will be up with v2.9
-lots of source underhood fixes & optimization done
+Changelog for Awaken OS v2.9
 
-===============
-23-06-2022
-===============
-Changelog for Awaken OS v2.8
 // New features
 
-\
-
-• Add left padding for keyguard slices
-• Add more themed icons for both gapps/vanilla builds
-• Add more core Google apps to system app whitelist for applock
-• Do not hardcode system round corners with Icon Shape
-• Exempt TeleService, Bluetooth, Cneapp & ImsService from location indicators
+• Bring back drawables for statusbar icon toggles
 • Gmscompat upstream
-• Introduced color section from Pixel stock for vanilla build
-• Introduced hotspot client manager
-• Introduced icon pack for launcher3
-• Switch to los fork of chromium webview
-• Whitelist YouTube apps & recorder from PixelProp
+• Introduced GameSpace & nuked google game dashboard
+• Introduced our own wallpapers in styles and wallpapers
+• Introduced Oppo Sans & HarmonyOS Sans fonts
+• Introduced P404 Volume Panel
+• Updated APN from LineageOS
+• Update themed icons
 
 // Fixed issues
 
-• Fixed an issue where floating rotation doesnt show if 2-button nav mode enabled
-• Fixed bluetooth percentage not showing on battery widget
-• Fixed emergency info crash on vanilla build
-• Fixed QS Panel glitch when changing dark/light mode from QS
+• Fixed bluetooth crash with battery widget
+• Fixed issue with linked notification volume
+• Fixed QS mobile icon disappearing on theme switch
+• Fixed suspicious spaces around mobile icons
 • Fixed some NPE
 
+Device Changelog:
 ===============
-23-06-2022
+fajita/fajita
 ===============
-########################################
-Fajita Changes:
-########################################
-fajita: Fixed status bar glitch for apps that access internal res.
-Bring back old usage of status_bar_height, status_bar_height_portrait,
-and status_bar_height_landscape by set the size containing cutout size
-
-
-===============
-23-06-2022
-===============
-########################################
-enchilada Changes:
-########################################
-enchilada: Fixed status bar glitch for apps that access internal res. dimen
-Bring back old usage of status_bar_height, status_bar_height_portrait,
-and status_bar_height_landscape by set the size containing cutout size
-
-
-===============
-23-06-2022
-===============
-########################################
-sdm845-common Changes:
-########################################
-sdm845-common: Add isDefaultPaymentRegistered to NxpNfcNci 
-sdm845-common: Add {is,set}TagUpToDate to NxpNfcNci
-sdm845-common: sepolicy: Allow vendor_qtelephony to set radio_prop
-sdm845-common: Sort blobs list /w sort-blobs-list.py 
-sdm845-common: Add more props for blur 
-sdm845-common: overlay: Don't pin camera app in memory 
-sdm845-common: overlay: configure SQLite to operate in MEMORY mode
-sdm845-common: overlay: Don't pin launcher app in memory
-
-===============
-23-06-2022
-===============
-########################################
-vendor/oneplus Changes:
-########################################
-sdm845-common: Add isDefaultPaymentRegistered to NxpNfcNci
-sdm845-common: Add {is,set}TagUpToDate to NxpNfcNci 
-
-===============
-23-06-2022
-===============
-########################################
-Hardware/oneplus Changes:
-########################################
-KeyHandler: Restore state on boot 
-hardware: oneplus-fwk: Add more OnePlus bits 
-aidl: vibrator: Update vibration effects
-hidl: fingerprint: call onFingerUp() on error fingerprint unlock
-hidl: fingerprint: Spoof verifiedboostate via property_get() hook  
-
-
-===============
-12-06-2022
-===============
-########################################
-primus-kernel Changes:
-########################################
-
-updated  primus-kernel to v4.9.232 with more optimizations
-update linux upstream  /fixes
-primus-kernel update v4.9.227 to v4.9.232
-drivers: drm: Import OnePlus DC dimming code
-Merge tag 'LA.UM.10.3.r1-01700-sdm845.0
-Merge tag 'LA.UM.10.3.r1-01700-sdm845.0
-Add sysfs nodes for EFPS
-High power consumption in Real AOD 17819
+-Re-Added some essential gapps
+-more enhanced  OnePlus Settings 
+-Ship with Primus Kernel 4.9.232
+-Selinux is enforcing + user build type
+-Safetynet passes by default
+-fajita:fixed blackscreen os bug/
+-fixed sepolicy denials
+-pocket mode improved
+-Disable debug.sf.latch_unsignaled from prop. 
+-Disabling this helps reduces notification flicker, UI performance is not impacted
+-UPDATE :Default Clang to clang 14.0.2 r445002 
+-sdm845-common: props: Allow more background apps
+enchilada: remove overlays that create issues in rounded corners
