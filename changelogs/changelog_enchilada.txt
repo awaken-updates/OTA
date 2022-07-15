@@ -25,18 +25,16 @@ Changelog for Awaken OS v2.9
 
 Device Changelog:
 ===============
-fajita/fajita
+fajita/enchilada 
 ===============
+-sdm845_common : device tree cleanup
 -Re-Added some essential gapps
--more enhanced  OnePlus Settings 
--Ship with Primus Kernel 4.9.232
--Selinux is enforcing + user build type
--Safetynet passes by default
--fajita:fixed blackscreen os bug/
--fixed sepolicy denials
--pocket mode improved
--Disable debug.sf.latch_unsignaled from prop. 
--Disabling this helps reduces notification flicker, UI performance is not impacted
--UPDATE :Default Clang to clang 14.0.2 r445002 
--sdm845-common: props: Allow more background apps
-enchilada: remove overlays that create issues in rounded corners
+-sdm845_common :fixup! sepolicy touchpanel
+-sdm845-common: props: Force triple frame buffers
+-This reduced jitter and doesn't have any measurable impact on latency.
+-sdm845-common:sepolicy: Allow vendor_qtelephony to set radio_prop
+-enchilada: remove overlays that create issues in rounded corners
+-KeyHandler: Restore state on boot
+-sdm845-common:Setup display color calibration for A12L NATURAL ,BOOSTED SATURATED 
+-Updated primus kernel from v4.9.232 to v4.9.258 
+-Added KERNEL ADDITIONAL FLAGS llvm for more optimizations
